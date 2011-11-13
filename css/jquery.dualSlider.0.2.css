@@ -25,20 +25,24 @@
     z-index:1;
 }
 
-.carousel .backgrounds .item_1{
-    background: transparent url(../images/carousel_bg_1.jpg) no-repeat 0 0;
+.carousel .backgrounds .item_kk{
+    background: transparent url(../images/carousel_bg_kk.jpg) no-repeat 0 0;
 }
 
-.carousel .backgrounds .item_2{
-    background: transparent url(../images/carousel_bg_2.jpg) no-repeat 0 0;
+.carousel .backgrounds .item_ml{
+    background: transparent url(../images/carousel_bg_ml.jpg) no-repeat 0 0;
 }
 
-.carousel .backgrounds .item_3{
-    background: transparent url(../images/carousel_bg_3.jpg) no-repeat 0 0;
+.carousel .backgrounds .item_ca{
+    background: transparent url(../images/carousel_bg_ca.jpg) no-repeat 0 0;
 }
 
-.carousel .backgrounds .item_4{
-    background: transparent url(../images/carousel_bg_4.jpg) no-repeat 0 0;
+.carousel .backgrounds .item_bha{
+    background: transparent url(../images/carousel_bg_bha.jpg) no-repeat 0 0;
+}
+
+.carousel .backgrounds .item_gg{
+    background: transparent url(../images/carousel_bg_gg.jpg) no-repeat 0 0;
 }
 
 .carousel .panel{
