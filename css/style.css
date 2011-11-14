@@ -87,14 +87,14 @@ h3{
 }
 .columns .right{
 	float:left;
-	width: 210px;
+	width: 160px;
 	margin: 0 0 0 10px;
 	
 }
 
 .columns .app{
 	float: left;
-	width: 210px;
+	width: 160px;
 	margin: 0 0 15px 10px;
 	text-align:center;
 }
@@ -106,25 +106,31 @@ h3{
 }
 .kk {
 	background:url(../images/icon_kk.jpg) no-repeat;
-	margin: 0 0 0 50px;
+	margin: 0 0 0 30px;
+	width: 100px;
+	height: 100px;
+}
+.ml {
+	background:url(../images/icon_ml.jpg) no-repeat;
+	margin: 0 0 0 30px;
 	width: 100px;
 	height: 100px;
 }
 .ca {
 	background:url(../images/icon_ca.jpg) no-repeat;
-	margin: 0 0 0 50px;
+	margin: 0 0 0 30px;
 	width: 100px;
 	height: 100px;
 }
 .bha {
 	background:url(../images/icon_bha.jpg) no-repeat;
-	margin: 0 0 0 50px;
+	margin: 0 0 0 30px;
 	width: 100px;
 	height: 100px;
 }
 .gg {
 	background:url(../images/icon_gg.jpg) no-repeat;
-	margin: 0 0 0 50px;
+	margin: 0 0 0 30px;
 	width: 100px;
 	height: 100px;
 }
