@@ -325,7 +325,7 @@ footer {
 /* Logo */
 header hgroup {
     position: absolute;
-    background: url(../images/sysmoko_white_36.png) no-repeat;
+    background: url(../images/sysmoko.png) no-repeat;
     height: 36px;
     width: 128px;
     display: block;
