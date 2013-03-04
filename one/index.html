@@ -8,27 +8,27 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Mobile App Development Studio">
+    <meta name="author" content="Sysmoko">
 
     <title>Sysmoko</title>
 
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
-    <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.1/nivo-slider.css" type="text/css" />
 
     <!--[if lt IE 9]>
 	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.6.1.min.js"><\/script>')</script>
-
-    <script src="js/jquery.smoothscroll.js"></script>
-    <script src="js/jquery.nivo.slider.pack.js"></script>
-    <script src="js/jquery.easing-1.3.pack.js"></script>
-    <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
-    <script src="js/init.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.10/jquery.smooth-scroll.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.1/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({directionNavHide:false});
+        $('a').smoothScroll();
+    });
+    </script>
 
 </head>
 
@@ -45,11 +45,9 @@
         <nav>
             <ul>
                 <li><a href="#main">Home</a></li>
-                <!--<li><a href="#process">Our Process</a></li>-->
+                <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Our Works</a></li>
-                <li><a href="#about-us">About Us</a></li>
-           <!--     <li><a href="#styles">Styles</a></li> -->
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#contact">About Us</a></li>
             </ul>
         </nav>
 
@@ -63,34 +61,26 @@
     <section id="main">
 
         <div class="intro-box">
-           <h1>Welcome.</h1>
+           <h2>Mobile App Studio</h2>
 
-           <p class="intro">Sysmoko - Lifestyle and Education Mobile App Studio</p>
-
-           <p class="intro">Learn more <a href="#about-us">about us</a>  or <a href="#contact">get in touch</a> if you want to discuss and know about the mobile projects we are currently crafting in our lab. We are constantly on a lookout for innovative and exciting mobile projects to work on.</p>
+           <p class="intro">Learn more <a href="#about-us">about us</a>  if you want to discuss and know about the mobile projects we are currently crafting in our lab. We are constantly on a lookout for innovative and exciting mobile projects to work on.</p>
 
         </div>
 
         <div class="slider-wrapper">
-
             <div id="slider" class="nivoSlider">
                 <img src="images/slides/carousel_bg_oik.jpg" width="383" height="198" alt="" />
                 <img src="images/slides/carousel_bg_kk.jpg" width="383" height="198" alt="" />
                 <img src="images/slides/carousel_bg_ml.jpg" width="383" height="198" alt="" />
                 <img src="images/slides/carousel_bg_ca.jpg" width="383" height="198" alt="" />
                 <img src="images/slides/carousel_bg_bha.jpg" width="383" height="198" alt="" />
-                
-                <!-- title="#htmlcaption"/-->
             </div>
-            <!--div id="htmlcaption" class="nivo-html-caption">
-                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
-            </div-->
         </div>
 
         <div class="row no-bottom-margin">
 
             <section class="col">
-                <h2>Process</h2>
+                <h2>Strategy</h2>
 
                 <p>Sysmoko understands that journey from idea to product is not that straight forward. We have crafted a process - the Sysmoko process - to help you in this journey, bring the elements of innovation, design and development together to create the product from your idea.</p>
             </section>
@@ -136,26 +126,55 @@
                 </section>
             </div>
 
-            <!--div class="row">
+            <div class="row">
                 <section class="col">
-                    <h2>Print Design</h2>
+                    <h2>Mobile App</h2>
 
-                    <p><img class="align-left" alt="" src="images/services/print-design.png" />In hac habitasse platea risus dictumst. Suspendisse sit amet enim arcu. Aliquam erat volutpat.
-                    Phasellus a dui nisi. Nunc nec quam vitae nisl vehicula euismod. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Sed commodo ligula blandit risus</p>
-                </section>
-                <section class="col mid">
-                    <h2>Logo Design &amp; Branding</h2>
-
-                    <p><img class="align-left" alt="" src="images/services/logo-design-and-branding.png" />Nascetur augue hac platea enim, egestas pulvinar vut. Pulvinar cum, ac eu, tristie
+                    <p><img class="align-left" alt="" src="images/services/star.png" />Nascetur augue hac platea enim, egestas pulvinar vut. Pulvinar cum, ac eu, tristie
                     acus duis in dictumst non integer! Elit, sed scelerisque odio tortor, sed platea dis? Quis
                     cursus parturient ac amet odio in? Nunc Amet urna scelerisque eu lectus placerat.</p>
                 </section>
 
-                <section class="col">
-                    <h2>Newsletter</h2>
+                <section class="col mid">
+                    <h2>Web App</h2>
 
-                    <p><img class="align-left" alt="" src="images/services/newsletter.png" />Pellentesque magna mi, iaculis pharetra eu, fermentum ullamcorper nisi.
+                    <p><img class="align-left" alt="" src="images/services/webdesign.png" />In hac habitasse platea risus dictumst. Suspendisse sit amet enim arcu. Aliquam erat volutpat.
+                    Phasellus a dui nisi. Nunc nec quam vitae nisl vehicula euismod. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Sed commodo ligula blandit risus</p>
+                </section>
+
+                <section class="col">
+                    <h2>Game</h2>
+
+                    <p><img class="align-left" alt="" src="images/services/flat.png" />Pellentesque magna mi, iaculis pharetra eu, fermentum ullamcorper nisi.
+                    Integer fringilla magna ut quam vulputate erat. Pulvinar cum, ac eu augue ut sit amet
+                    gravida lacinia, eros massa condimentum sem, a fermentum ligula lorem non.
+                    Phasellus vulputate.</p>
+
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="col">
+                    <h2>Social</h2>
+
+                    <p><img class="align-left" alt="" src="images/services/chat.png" />Nascetur augue hac platea enim, egestas pulvinar vut. Pulvinar cum, ac eu, tristie
+                    acus duis in dictumst non integer! Elit, sed scelerisque odio tortor, sed platea dis? Quis
+                    cursus parturient ac amet odio in? Nunc Amet urna scelerisque eu lectus placerat.</p>
+                </section>
+
+                <section class="col mid">
+                    <h2>Education</h2>
+
+                    <p><img class="align-left" alt="" src="images/services/girl.png" />In hac habitasse platea risus dictumst. Suspendisse sit amet enim arcu. Aliquam erat volutpat.
+                    Phasellus a dui nisi. Nunc nec quam vitae nisl vehicula euismod. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Sed commodo ligula blandit risus</p>
+                </section>
+
+                <section class="col">
+                    <h2>Productivity</h2>
+
+                    <p><img class="align-left" alt="" src="images/services/services.png" />Pellentesque magna mi, iaculis pharetra eu, fermentum ullamcorper nisi.
                     Integer fringilla magna ut quam vulputate erat. Pulvinar cum, ac eu augue ut sit amet
                     gravida lacinia, eros massa condimentum sem, a fermentum ligula lorem non.
                     Phasellus vulputate.</p>
@@ -165,7 +184,7 @@
 
             <a class="back-to-top" href="#main">Back to Top</a>
 
-      </section-->
+      </section>
 
       <!-- portfolio -->
       <section id="portfolio">
@@ -214,327 +233,66 @@
       </section>
 
       <!-- about us -->
-      <section id="about-us" class="clearfix">
+      <section id="contact" class="clearfix">
 
             <h1>About us.</h1>
 
-
-
-                <p class="intro">We create apps for education and lifestyle on the mobile platform. And strive to make it fun for all ages. Please do check out the apps we have created so far.
-                </p>
-                <p>
-                We are looking forward to creating more new apps. If you have any ideas in the mobile space which you will like to share and need help in, please do <a href="#contact"> contact us </a> for a discussion! In the meantime, please do check out all our apps available on <a href="https://itunes.apple.com/us/artist/sysmoko-llp/id408646283">Apple App Store </a> and <a href = "https://play.google.com/store/apps/developer?id=sysmoko&hl=en">Google Play</a>. 
-                </p>
-                      <h2>Our Process</h2>
-
-                        <p>Sysmoko process is all about innovation, design and development. We work on ideas within the team, and with our clients, by bringing these elements together to create our products. Sysmoko works iteratively based on feedback to ensure that the ideas are brought to life the way we or our clients want it. </p>
-
-
-                        <h2>Our Approach</h2>
-
-                        <p>Sysmoko approach in developing mobile apps is about utilizing tools that fit our and our clients' needs, and providing a mutual feedback platform within the team, and with our clients. Some of the tools we use in our approach includes RED, Trello, TestFlight and GitHub, on top of emails, whatsapp/SMS, Phone calls, Google Hangouts we have within the team and our clients. The Sysmoko approach does not end with these mentioned tools, as we actively seek for ways to improve our process and approach in mobile development.</p>
-                    </section>
-        
-
-                <!--<h2>Template License</h2>
-
-                <p>This work is released and licensed under the <a href="http://creativecommons.org/licenses/by/2.5/" rel="license">
-                Creative Commons Attribution 3.0 License</a>, which means that you are free to use and modify it for any
-                personal or commercial purpose. All I ask is that you give me credit by including a link back to my
-                <a href="http://www.styleshout.com">website</a></p>
-
-                <div class="row no-bottom-margin"-->
-
-                    
-                
-<!--
-                <h2>Our Team</h2>
-
-                <ul class="the-team">
-                    <li class="odd">
-                        <div class="thumbnail">
-                            <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
-                        </div>
-                        <p class="mname"><a href="#">Erwin Aligam</a></p>
-                        <p>Co-founder &amp; Creative Director</p>
-                    </li>
-                    <li>
-                        <div class="thumbnail">
-                            <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
-                        </div>
-                        <p class="mname"><a href="#">Uzumaki Naruto</a></p>
-                        <p>Senior Webdesigner</p>
-                    </li>
-                    <li class="odd">
-                        <div class="thumbnail">
-                            <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
-                        </div>
-                        <p class="mname"><a href="#">Haruno Sakura</a></p>
-                        <p>Graphic Designer</p>
-                    </li>
-                    <li>
-                        <div class="thumbnail">
-                            <a href="#"><img alt="thumbnail" src="images/thumb-pic.png" width="83" height="78"></a>
-                        </div>
-                        <p class="mname"><a href="#">Uchiha Sasuke</a></p>
-                        <p>Web Developer</p>
-                    </li>
-                </ul>
-
-            </div>
-
-            <aside>
-
-                    <h2>More about us</h2>
-
-                    <p>What better way to learn more about us by dropping an email to contactus@sysmoko.com. We are eager to meet you (especially if you are in town), so do buzz us.</p>
-
-<!--                    <a href="#" class="download-btn">Download PDF</a>
-
-
-                    <h2>Links</h2>
-
-
-                    <ul class="link-list">
-                        <li><a href="http://themeforest.net?ref=ealigam" title="Site Templates">Themeforest</a></li>
-                        <li><a href="http://www.4templates.com/?go=228858961" title="Website Templates">4Templates</a></li>
-                        <li><a href="http://www.dreamhost.com/r.cgi?287326|sshout" title="Webhosting">Dreamhost</a></li>
-                        <li><a href="http://store.templatemonster.com?aff=ealigam" title="Web Templates">Templatemonster</a></li>
-                    </ul>
-
-
-                    <h2>Testimonials</h2>
-
-                    <div class="testimonials">
-                        <blockquote>
-                            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.
-                            Nullam id dolor id nibh ultricies vehicula ut id elit. </p>
-
-                            <cite>&mdash; John Doe, XYZ Company</cite>
-                        </blockquote>
-                        <blockquote>
-                            <p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis
-                            consectetur purus sit amet fermentum.</p>
-
-                            <cite>&mdash; Jane Roe, ABC Corp</cite>
-                        </blockquote>
-                    </div>
-
-            </aside>
-
-
-
-            <a class="back-to-top" href="#main">Back to Top</a>
-
-      </section>
-
-      <!-- Styles -->
-    <!--  <section id="styles" class="clearfix">
-
-            <h1>Styles.</h1>
-
             <div class="primary">
 
-                <p class="intro">Maecenas eu neque erat, auctor feugiat enim. Sed libero risus, pretium vel
-                elementum id, lacinia vel purus. Mauris semper, orci vitae aliquam vestibul,
-                lorem nulla auctor nulla, gravida fermentum urna libero eget sapien. Quisque
-                cursus, urna quis vestibulum egestas, nibh sem semper erat, a feugiat justo
-                dolor eget libero.
-                </p>
+            <p class="intro">We create apps for education and lifestyle on the mobile platform. And strive to make it fun for all ages. Please do check out the apps we have created so far.
+            </p>
+            <p>
+            We are looking forward to creating more new apps. If you have any ideas in the mobile space which you will like to share and need help in, please do <a href="#contact"> contact us </a> for a discussion! In the meantime, please do check out all our apps available on <a href="https://itunes.apple.com/us/artist/sysmoko-llp/id408646283">Apple App Store </a> and <a href = "https://play.google.com/store/apps/developer?id=sysmoko&hl=en">Google Play</a>. 
+            </p>
+                  <h2>Our Process</h2>
 
-                <h2>A paragraph</h2>
-
-                <p>Maecenas eu neque erat, auctor feugiat enim. Sed libero risus, pretium vel
-                elementum id, lacinia vel purus. Mauris semper, orci vitae aliquam vestibul,
-                lorem nulla auctor nulla, gravida fermentum urna libero eget sapien. Quisque
-                cursus, urna quis vestibulum egestas, nibh sem semper erat, a feugiat justo
-                dolor eget libero. Urna quis vestibulum egestas, nibh sem
-                semper erat, a feugiat justo dolor eget libero
-                </p>
-
-                <p>A <a href="#">link</a>,
-				<abbr title="this really isn't a very good description">abbrebation</abbr>,
-				<strong>strong text</strong>,
-				<del>deleted text</del>, and
-                <mark>this is a mark text.</mark>
-        		</p>
-
-                <h2>Example Lists</h2>
-
-				<ol>
-					<li>Here is an example</li>
-					<li>of an ordered list</li>
-				</ol>
-
-				<ul>
-					<li>Here is an example</li>
-					<li>of an unordered list</li>
-				</ul>
-
-				<dl>
-            	    <dt>Definition title</dt>
-            	    <dd>Definition description</dd>
-            	    <dt>Definition title</dt>
-            	    <dd>Definition description</dd>
-         	    </dl>
-
-                <h2>Blockquote</h2>
-
-				<blockquote>
-				    <p>Every child is an artist. The challenge is to remain an artist after you grow up.</p>
-				</blockquote>
-
-                <h2>Headers</h2>
-
-				<h1>H1 Heading</h1>
-				<h2>H2 Heading</h2>
-				<h3>H3 Heading</h3>
-
-            </div>
-
-            <aside>
-
-                    <h2>Sidebar Heading</h2>
-
-                    <p>Nascetur augue hac platea enim, egestas pulvinar vut. Pulvinar cum, ac eu, tristie
-                    acus duis in dictumst non integer! Elit, sed scelerisque odio.</p>
-
-                    <h2>Link List</h2>
-
-                    <ul class="link-list">
-                        <li><a href="#">Maecenas eu neque</a></li>
-                        <li><a href="#">Dolor eget libero</a></li>
-                        <li><a href="#">Lorem Ipsum</a></li>
-                        <li><a href="#">Gravida fermentum urna</a></li>
-                    </ul>
-
-                    <h2>Testimonials</h2>
-
-                    <div class="testimonials">
-                        <blockquote>
-                            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.
-                            Nullam id dolor id nibh ultricies vehicula ut id elit. </p>
-
-                            <cite>&mdash; John Doe, XYZ Company</cite>
-                        </blockquote>
-                        <blockquote>
-                            <p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis
-                            consectetur purus sit amet fermentum.</p>
-
-                            <cite>&mdash; Jane Roe, ABC Corp</cite>
-                        </blockquote>
-                    </div>
-
-            </aside>
-
-            <a class="back-to-top" href="#main">Back to Top</a>
-
-      
-
-      <!-- contact -->
-      <section id="contact" class="clearfix">
-
-            <h1>Get in touch.</h1>
+                    <p>Sysmoko process is all about innovation, design and development. We work on ideas within the team, and with our clients, by bringing these elements together to create our products. Sysmoko works iteratively based on feedback to ensure that the ideas are brought to life the way we or our clients want it. </p>
 
 
-                <p class="intro">
-                Interested to touch base? Have further queries on what Sysmoko is all about? Please do <a href="mailto:contactus@sysmoko.com">email </a> us and let us know how we can help you! We look forward to your queries and questions. If you happen to be in town in Singapore, please do drop us a buzz, and we will be more than glad to have a meetup with you!
-                </p>
-                <!--
-                <form method="post" action="contact.php" id="contactform">
+                    <h2>Our Approach</h2>
 
-                    <div>
-                    <p>Send me a message</p>
-                    </div>
+                    <p>Sysmoko approach in developing mobile apps is about utilizing tools that fit our and our clients' needs, and providing a mutual feedback platform within the team, and with our clients. Some of the tools we use in our approach includes RED, Trello, TestFlight and GitHub, on top of emails, whatsapp/SMS, Phone calls, Google Hangouts we have within the team and our clients. The Sysmoko approach does not end with these mentioned tools, as we actively seek for ways to improve our process and approach in mobile development.</p>
 
-                    <div>
-                    <label>Name <span class="required">*</span></label>
-                    <input name="name" type="text" id="name" value="" />
-                    </div>
+              </div>
+              <aside>
+                  <h2>Contact Information</h2>
 
-                    <div>
-                    <label>Email <span class="required">*</span></label>
-                    <input name="email" type="text" id="email" value="" />
-                    </div>
+                  <p class="intro">
+                  Interested to touch base? Have further queries on what Sysmoko is all about? Please do <a href="mailto:contactus@sysmoko.com">email </a> us and let us know how we can help you! We look forward to your queries and questions. If you happen to be in town in Singapore, please do drop us a buzz, and we will be more than glad to have a meetup with you!
+                  </p>
 
-                    <div>
-                    <label>Website</label>
-                    <input name="website" type="text" id="website" value="" />
-                    </div>
+                  <p>Email: contactus [@] sysmoko.com</p>
 
-                    <div>
-                    <label>Subject</label>
-                    <input name="subject" type="text" id="subject"  value="" />
-                    </div>
+                  <h2>Follow Us</h2>
 
-                    <div>
-                    <label>Message <span class="required">*</span></label>
-                    <textarea name="message" rows="20" cols="50"  id="message" ></textarea><br /><br />
-                    </div>
+                  <ul class="link-list social">
+                      <li class="facebook"><a href="#">Facebook</a></li>
+                      <li class="googleplus"><a href="#">Google+</a></li>
+                      <li class="twitter"><a href="#">Twitter</a></li>
+                      <li class="linkedin"><a href="#">Linkedin</a></li>
+                  </ul>
+              </aside>
 
-                    <div>
-					<input type="submit"  value="Submit" class="button">
-         			<input type="reset" value="Reset" class="button">
-					</div>
+              <a class="back-to-top" href="#main">Back to Top</a>
 
-
-                </form>
-
-            </div>
-
-            <aside>
-
-                    <h2>Contact Information</h2>
-
-
-                    <p>Nascetur augue hac platea enim, egestas pulvinar vut. Pulvinar cum, ac eu, tristie
-                    acus duis in dictumst non integer! Elit, sed scelerisque odio tortor, sed platea dis.</p>
-
-                    <p>
-                    PageOne Studio <br />
-                    Anystreet Avenue 012 <br />
-                    State, Anytown
-                    </p>
-
-                    <p>
-                    Phone: 0 123 456 789 0 <br />
-                    Email: info [@] pageone.com
-                    </p>
-
-
-                    <h2>Follow Us</h2>
-
-                    <ul class="link-list social">
-                        <li class="facebook"><a href="#">Facebook</a></li>
-                        <li class="googleplus"><a href="#">Google+</a></li>
-                        <li class="twitter"><a href="#">Twitter</a></li>
-                        <li class="dribble"><a href="#">Dribble</a></li>
-                        <li class="linkedin"><a href="#">Linkedin</a></li>
-                        <li class="delicious"><a href="#">Delicious</a></li>
-                        <li class="flickr"><a href="#">Flickr</a></li>
-                    </ul>
-
-            </aside>
-
-            <a class="back-to-top" href="#main">Back to Top</a>
-
-     </section>
-
+      </section>
 </div>
 
 <!-- footer -->
 <footer>
+
     <div class="footer-content">
         <ul class="footer-menu">
             <li><a href="#main">Home</a></li>
-            <!--<li><a href="#process">Process</a></li>-->
+            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about-us">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <!-- <li class="rss-feed"><a href="#">RSS Feed</a></li> -->
+            <li><a href="#contact">About</a></li>
         </ul>
 
-        <p class="footer-text">Copyright 2012 Sysmoko. All Rights Reserved to Sysmoko LLP.</a></p>
+        <p class="footer-text">Copyright 2013 Sysmoko. 
+          &nbsp;&nbsp; All Rights Reserved to Sysmoko LLP. 
+          &nbsp;&nbsp; Designed by Styleshout.
+        </p>
     </div>
 
 </footer>
