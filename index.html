@@ -1,200 +1,239 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+
 <head>
-	<title>Sysmoko - Education and Lifestyle Apps for Mobile Devices</title>	
-	<meta name="description" id="MetaDescription" content="" />
-	<meta name="keywords" id="MetaKeywords" content="Kids Karaoke, Grid Girl, " />	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="language" content="en" />	
-	<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="css/clearfix.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="css/jquery.dualSlider.0.2.css" />
-	<script src="scripts/jquery-1.3.2.min.js" type="text/javascript"></script>
-	<script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
-	<script src="scripts/jquery.timers-1.2.js" type="text/javascript"></script>
-	<script src="scripts/jquery.dualSlider.0.3.min.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-20484970-1']);
-		_gaq.push(['_trackPageview']);
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$(".carousel").dualSlider({
-				auto:true,
-				autoDelay: 12000,
-				easingCarousel: "swing",
-				easingDetails: "easeOutBack",
-				durationCarousel: 1000,
-				durationDetails: 600
-			});
-		});
-	</script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Mobile App Development Studio">
+    <meta name="author" content="Sysmoko">
+
+    <title>Sysmoko</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.1/nivo-slider.css" type="text/css" />
+
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.10/jquery.smooth-scroll.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.1/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({directionNavHide:false});
+        $('a').smoothScroll();
+    });
+    </script>
+
 </head>
+
 <body>
-	
-	<div class="wrapper clearfix">
-		
-		<div class="carousel clearfix">
 
-			<div class="panel">
-				
-				<div class="details_wrapper">
-					
-					<div class="details">
-					
-						<div class="detail">
-							<h2><a href="kidsKaraoke.html">Kids Karaoke - Sing Along with Ann!</a> <br /> A sing-along song book for kids with 8 timeless children songs.</h2>
-							<a href="kidsKaraoke.html" title="Read more" class="more">Read more</a>
-						</div><!-- /detail -->
-						
-						<div class="detail">
-							<h2><a href="merryLambs.html">Merry Lambs</a> <br /> Have fun with Ann counting the lambs and learning about their colors!</h2>
-							<a href="merryLambs.html" title="Read more" class="more">Read more</a>
-						</div><!-- /detail -->
-						
-						<div class="detail">
-							<h2><a href="chineseArts.html">Chinese Arts</a> <br /> features paintings of great artists from the People's Republic of China. </h2>
-							<a href="chineseArts.html" title="Read more" class="more">Read more</a>
-						</div><!-- /detail -->
-						
-						<div class="detail">
-							<h2><a href="benHopeArt.html">Ben Hope Art Gallery</a> <br /> showcases artworks by London-based artist Benjamin Hope on the mobile platform.</h2>
-							<a href="benHopeArt.html" title="Read more" class="more">Read more</a>
-						</div><!-- /detail -->
-						
-						<div class="detail">
-							<h2><a href="#">Grid Girl.</a> <br /> Discovering beautiful ladies on Instagram has never been easier and more fun. </h2>
-							<a href="#" title="Read more" class="more">Coming soon!</a>
-						</div><!-- /detail -->
-						
-					
-					</div><!-- /details -->
-					
-				</div><!-- /details_wrapper -->
-				
-				<div class="paging">
-					<div id="numbers"></div>
-					<a href="javascript:void(0);" class="previous" title="Previous" >Previous</a>
-					<a href="javascript:void(0);" class="next" title="Next">Next</a>
-				</div><!-- /paging -->
-				
-				<a href="javascript:void(0);" class="play" title="Turn on autoplay">Play</a>
-				<a href="javascript:void(0);" class="pause" title="Turn off autoplay">Pause</a>
-				
-			</div><!-- /panel -->
-	
-			<div class="backgrounds">
-				
-				<div class="item item_kk">
+<!-- header-wrap -->
+<div id="header-wrap">
+    <header>
 
-				</div><!-- /item -->
-				
-				<div class="item item_ml">
+        <hgroup>
+            <h1><a href="index.html">Sysmoko</a></h1>
+        </hgroup>
 
-				</div><!-- /item -->
-				
-				<div class="item item_ca">
-					
-				</div><!-- /item -->
-				
-				<div class="item item_bha">
-					
-				</div><!-- /item -->
-				
-				<div class="item item_gg">
-					
-				</div><!-- /item -->
-				
-			</div><!-- /backgrounds -->
-			
-		</div><!-- /carousel --> 
-		
-		<!-- Header -->
-		<h1><img src="images/Sysmoko_48pt.png" width="168" height="48" alt="Sysmoko" /></h1>
-		<h2><i>An Education and Lifestyle App Studio</i></h2>
-		
-		<div class="columns clearfix">    <!-- App Icons -->
-		
-			<div class="app c_kk">
-				<a href="kidsKaraoke.html">
-					<div class="kk">
-						<div class="mask"></div>
-					</div>
-					Kids Karaoke
-				</a>
-			</div>
-			
-			<div class="app c_ml">
-				<a href="merryLambs.html">
-					<div class="ml">
-						<div class="mask"></div>
-					</div>
-					Merry Lambs
-				</a>
-			</div>
-			
-			<div class="app c_ca">
-				<a href="chineseArts.html">
-					<div class="ca">
-						<div class="mask"></div>
-					</div>
-					Chinese Arts
-				</a>
-			</div>
-			
-			<div class="app c_bha">
-				<a href="benHopeArt.html">
-					<div class="bha">
-						<div class="mask"></div>
-					</div>
-					Ben Hope Art
-				</a>
-			</div>
-			
-			<div class="app c_gg">
-				<a href="#">
-					<div class="gg">
-						<div class="mask"></div>
-					</div>
-					Coming soon!
-				</a>
-			</div>
-		
-		</div><!-- /columns -->
+        <nav>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#services">Development</a></li>
+                <li><a href="#portfolio">Our Works</a></li>
+                <li><a href="#contact">About Us</a></li>
+            </ul>
+        </nav>
 
-		<div class="columns clearfix">   <!-- Content -->
-			
-			<div class="left">
-				<h3>What We Do</h3>
-				<p>
-					We create apps for education and lifestyle on the mobile platform. And strive to make it fun for all ages.
-				</p>
-				<p>
-					We are looking forward to adding more apps soon. So do check back for updates on latest releases! In the meantime, check out all our apps available on Apple App Store & Android Marketplace!
-				</p>
+    </header>
+</div>
 
-			</div><!-- /left col -->
-		
-			<div class="right">
-				<h3>Contact Us</h3>
-				<p>
-					Questions? Please <a href="mailto:contactus@sysmoko.com">contactus@sysmoko.com</a>. Let's meet over a cup of coffee!
-				</p>
-			</div><!-- /right col -->
-			
-		</div>
+<img src="images/b3.jpg" style="margin: 60px 0 -80px 0; width:100%">
 
-		<div class="copyright">
-			Copyright &copy; Sysmoko 2010
-		</div>
-	</div><!-- /wrapper -->
+<!-- content-wrap -->
+<div class="content-wrap">
+
+    <!-- main -->
+    <section id="main">
+
+        <div class="row">
+
+            <section class="col">
+                <h2>Strategy</h2>
+
+                <p>Sysmoko understands that journey from idea to product is not that straight forward. A strategy is required to help you in this journey. Sysmoko brings together the elements of innovation, design and development to create the product from your idea.</p>
+            </section>
+            <section class="col mid">
+                <h2>Innovation</h2>
+
+                <p>Every business requires innovation to stay ahead of the competition. Sysmoko enables you with our innovative solutions in the web and mobile space. Sysmoko helps you develop new values to meet new demand in the everchanging marketplace. </p>
+            </section>
+
+            <section class="col">
+                <h2>Design</h2>
+
+                <p>Design is the first step in translating innovation to reality. Sysmoko is here to work with you to create a clear picture of your idea, including the look and feel. With a blue print, Sysmoko brings you one step closer towards realizing your idea.</p>
+            </section>
+        </div>
+
+      </section>
+
+      <!-- services -->
+      <section id="services" >
+
+            <h1>Development</h1>
+            <div class="row">
+                <section class="col">
+                    <h2>Mobile App</h2>
+
+                    <p><img class="align-left" alt="" src="images/services/star.png" />Your mobile has become indispensible in everyday life. Being the fastest growing business channel, having a mobile solution is essential. Sysmoko provides iOS, Android and other Mobile platform solutions to keep you in the game.</p>
+                </section>
+
+                <section class="col mid">
+                    <h2>Web App</h2>
+
+                    <p><img class="align-left" alt="" src="images/services/webdesign.png" />Web app has slowly replaced traditional desktop software as bread and butter for businesses. Sysmoko provides web app solutions to provide greater control of your business regardless of the technology platform you are on.</p>
+                </section>
+
+                <section class="col">
+                    <h2>Game</h2>
+
+                    <p><img class="align-left" alt="" src="images/services/flat.png" />Gamification provides you an innovative mean of providing values to your clients. Sysmoko creates games that allow you to engage, educate and reward your new and existing customer base in a fun and exciting manner.</p>
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="col">
+                    <h2>Social</h2>
+
+                    <p><img class="align-left" alt="" src="images/services/chat.png" />Businesses go social as the customers are hanging out there. It is an important strategy to build and maintain an online community. Sysmoko has the expertise to ensure that you reach out to the right target with our solutions.</p>
+                </section>
+
+                <section class="col mid">
+                    <h2>Education</h2>
+                    <p><img class="align-left" alt="" src="images/services/girl.png" />Education is a fast growing area where many seek different tools to teach and train the students. Sysmoko has the experience in developing innovative mobile solutions to help educators nurture the next generation.</p>
+                </section>
+
+                <section class="col">
+                    <h2>Productivity</h2>
+
+                    <p><img class="align-left" alt="" src="images/services/services.png" />Businesses seek multiple mean to keep themselves lean and efficient in the marketplace. Sysmoko has harnessed on technology to improve processes at the workplace, and ensured key performance indicators are met.</p>
+
+                </section>
+            </div>
+
+            <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+
+      <!-- portfolio -->
+      <section id="portfolio">
+
+            <h1>Featured works.</h1>
+
+            <ul class="folio-list clearfix">
+                <li class="folio-thumb">
+                    <div class="thumb">
+                        <img src="images/app/oikonopolis.png" alt="" />
+                    </div>
+                    <h3 class="entry-title">Oikonopolis</h3>
+                </li>
+
+                <li class="folio-thumb">
+                    <div class="thumb">
+                       <img src="images/app/kids_karaoke.png" alt="" />
+                    </div>
+                    <h3 class="entry-title">Kids Karaoke</h3>
+                </li>
+
+                <li class="folio-thumb">
+                    <div class="thumb">
+                        <img src="images/app/merry_lambs.png" alt="" />
+                    </div>
+                    <h3 class="entry-title">Merry Lambs</h3>
+                </li>
+
+                <li class="folio-thumb">
+                    <div class="thumb">
+                        <img src="images/app/chinese_arts.png" alt="" />
+                    </div>
+                    <h3 class="entry-title">Chinese Arts</h3>
+                </li>
+                <li class="folio-thumb">
+                    <div class="thumb">
+                        <img src="images/app/ben_hope_art.png" alt="" />
+                    </div>
+                    <h3 class="entry-title">Ben Hope Art</h3>
+                </li>
+
+            </ul>
+
+            <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+
+      <!-- about us -->
+      <section id="contact" class="clearfix">
+
+            <h1>About Sysmoko</h1>
+
+            <div class="primary">
+
+            <p class="intro">We create web and mobile solutions primarily in the education and lifestyle space. Our expertise and passion in the mobile space drives us to creating interesting and exciting products in the marketplace.
+            </p>
+            <p>
+            We are looking forward to offering our expertise to help your business. If you have any ideas  which you will like to share and need help in, please do <a href="#contact"> contact us </a> for a discussion! In the meantime, please check out all our apps available on <a href="https://itunes.apple.com/us/artist/sysmoko-llp/id408646283">Apple App Store </a> and <a href = "https://play.google.com/store/apps/developer?id=sysmoko&hl=en">Google Play</a>. 
+            </p>
+                  <h2>Our Process</h2>
+
+                    <p>Sysmoko process is all about innovation, design and development. We work on ideas within the team, and with our clients, by bringing these elements together to create our products. Sysmoko works iteratively based on feedback to ensure that the ideas are brought to life the way we or our clients want it. </p>
+
+
+                    <h2>Our Approach</h2>
+
+                    <p>Sysmoko approach in developing web mobile apps is about understanding and engaging the problem based on feedback within the team and our client. Sysmoko emphasizes on rapid development and iterating through based on feedback from the team, client or customers. We end the approach by conducting QA iteratively to create the ideal product for you and the marketplace.</p>
+
+              </div>
+              <aside>
+                  <h2>Contact Information</h2>
+
+                  <p class="intro">
+                  Interested to touch base? Have further queries on what Sysmoko is all about? Please do email us and let us know how we can help you! We look forward to your queries and questions. If you happen to be in town in Singapore, please do drop us a buzz, and we will be more than glad to have a meetup with you!
+                  </p>
+
+                  <p>Email: contactus [@] sysmoko.com</p>
+
+              </aside>
+
+              <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+</div>
+
+<!-- footer -->
+<footer>
+
+    <div class="footer-content">
+        <ul class="footer-menu">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#services">Development</a></li>
+            <li><a href="#portfolio">Our Works</a></li>
+            <li><a href="#contact">About Us</a></li>
+        </ul>
+
+        <p class="footer-text">Copyright 2013 Sysmoko. 
+          &nbsp;&nbsp; Designed by Styleshout.
+          &nbsp;&nbsp; Image by Incase.
+        </p>
+    </div>
+
+</footer>
 
 </body>
 </html>
