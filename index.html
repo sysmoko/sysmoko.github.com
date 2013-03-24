@@ -23,10 +23,12 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.10/jquery.smooth-scroll.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.1/jquery.nivo.slider.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.8.4/jquery.lazyload.min.js"></script>
     <script type="text/javascript">
     $(window).load(function() {
         $('#slider').nivoSlider({directionNavHide:false});
         $('a').smoothScroll();
+        $("img.lazy").lazyload();
     });
     </script>
 
@@ -54,7 +56,7 @@
     </header>
 </div>
 
-<img src="images/b3.jpg" style="margin: 60px 0 -60px 0; width:100%">
+<img class="lazy" src="images/grey.gif" data-original="images/b3.jpg"  style="margin: 60px 0 -60px 0; width:100%">
 
 <!-- content-wrap -->
 <div class="content-wrap">
