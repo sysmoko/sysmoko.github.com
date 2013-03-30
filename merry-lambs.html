@@ -25,6 +25,24 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+    <!--Carousel-->
+    <script type="text/javascript" src="/carouFredSel-6.2.0/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/carouFredSel-6.2.0/jquery.carouFredSel-6.2.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+            // Using custom configuration
+            $("#merrylambspic").carouFredSel({
+                direction           : "right",
+                scroll : {
+                    circular        : true,
+                    items           : 4,
+                    easing          : "elastic",
+                    duration        : 1000,                        
+                    pauseOnHover    : true
+                }                  
+            });
+        });
+        </script>
 </head>
 
 <body>
@@ -64,7 +82,17 @@
             <p>With interesting and colorful graphics, do not miss out the fun learning experience in Merry Lambs!</p>
 
             <center>
-            <div class="folio-thumb">
+            <div class="caroufredsel_wrapper">
+                <div id = "merrylambspic">
+                    <img src="images/app/ml_splash.png" width="480" height="320" alt="Splash Page">    
+                    <img src="images/app/ml_lambs.png" width="480" height="320" alt="Prancing Merry Lambs">
+                    <img src="images/app/ml_rain.png" width="480" height="320" alt="Colorful Rain">
+                    <img src="images/app/ml_info.png" width="480" height="320" alt="About Merry Lambs">
+                </div>
+            </div>
+            
+
+            <!--div class="folio-thumb">
                 <img src="images/app/ml_splash.png" width="480" height="320" alt="Splash Page">
             </div>
             <div class="thumb">
@@ -76,7 +104,7 @@
             <div class="thumb">
                 <img src="images/app/ml_info.png" width="480" height="320" alt="About Merry Lambs">
             </div>
-            </center>
+            </center-->
 
         </div>
 
