@@ -42,7 +42,8 @@
                 scroll : {
                     circular        : true,
                     items           : 1,
-                    duration        : 500,                        
+                    duration        : 500, 
+                    fx              : "crossfade",
                     pauseOnHover    : true
                 }                  
             });
@@ -92,19 +93,25 @@
             <p>Surprise your kids with our shuffle feature, as they sing, dance, clap along with the rhythm! </p>
 
             <center>
-
-            <div class="caroufredsel_wrapper">
-                <div id = "kk">
-                    <img src="images/app/kk_splashscreen.jpg" width="320" height="250" alt="Kids Karaoke - Splash Screen">
-                    <img src="images/app/kk_dashboard.jpg" width="320" height="250" alt="Kids Karaoke - Dashboard">
-                    <img src="images/app/kk_santa.jpg" width="320" height="250" alt="Kids Karaoke - Santa Claus is Coming to Town">
-                    <img src="images/app/kk_mary_lamb.jpg" width="320" height="250" alt="Kids Karaoke - Mary Had A Little Lamb">
+            <section id="carousel">    
+                <div class="caroufredsel_wrapper">
+                    <ul class="folio-list clearfix">
+                        <li class="folio-thumb">    
+                            <div class="thumb">
+                                <div id = "kk">
+                                    <img src="images/app/kk_splashscreen.jpg" alt="Kids Karaoke - Splash Screen">
+                                    <img src="images/app/kk_dashboard.jpg" alt="Kids Karaoke - Dashboard">
+                                    <img src="images/app/kk_santa.jpg" alt="Kids Karaoke - Santa Claus is Coming to Town">
+                                    <img src="images/app/kk_mary_lamb.jpg" alt="Kids Karaoke - Mary Had A Little Lamb">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>    
-            <!--img src="images/app/kk_santa.jpg" width="320" height="250" alt="Kids Karaoke - Santa Claus is Coming to Town">
-            <img src="images/app/kk_mary_lamb.jpg" width="320" height="250" alt="Kids Karaoke - Mary Had A Little Lamb"--> 
+            </section>
+          
             </center>
-
+        
             <h2>Learn to sing the following songs:</h2>
 
             <ul class="music">

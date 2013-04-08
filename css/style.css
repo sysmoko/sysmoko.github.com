@@ -517,6 +517,36 @@ section#portfolio ul.folio-list li h3.entry-title {
     margin-left: 16px;
 }
 
+/* ---------------------------------------
+    Carousel
+----------------------------------------- */
+section#carousel ul.folio-list {
+    margin: 25px 0;
+    padding: 0;
+    list-style: none;
+}
+section#carousel ul.folio-list li {
+    float: left;
+    margin-right: 29px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 539px;
+    height: 379px;
+    max-height: 379px;
+}
+section#carousel ul.folio-list li .thumb {
+    margin: 0 0 5px 0;
+    padding: 0;
+    background: url(../images/thumb-bg-large.png) no-repeat;
+    width: 539px;
+    height: 379px;
+}
+section#carousel ul.folio-list li .thumb img {
+    margin-top: 27px;
+    margin-left: 0px;
+}
+
+
 /* ------------------------------------------------
     About
 ------------------------------------------------ */

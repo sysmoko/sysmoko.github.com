@@ -30,14 +30,15 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.1.0/jquery.carouFredSel.packed.js"></script>
     
     <script type="text/javascript">
-            $(document).ready(function() {
+        $(document).ready(function() {
             // Using custom configuration
             $("#slider").carouFredSel({
                 direction           : "left",
                 scroll : {
                     circular        : true,
                     items           : 1,
-                    duration        : 500,                        
+                    duration        : 500,   
+                    fx              : "crossfade",                     
                     pauseOnHover    : true
                 }                  
             });
@@ -79,18 +80,27 @@
             </ul>
 
 
-            <p>With interesting and colorful graphics, do not miss out the fun learning experience in Merry Lambs!</p>
+            <p>With interesting and colorful graphics, do not miss out the fun learning experience in Merry Lambs! Best for kids aged 2-4 years old. So download it for your toddler now!</p>
 
             <center>
-            <div class="caroufredsel_wrapper">
-                <div id = "slider">
-                    <img src="images/app/ml_splash.png" width="512" height="384" alt="Splash Page">    
-                    <img src="images/app/ml_lambs.png" width="512" height="384" alt="Prancing Merry Lambs">
-                    <img src="images/app/ml_rain.png" width="512" height="384" alt="Colorful Rain">
-                    <img src="images/app/ml_info.png" width="512" height="384" alt="About Merry Lambs">
+            <section id="carousel">    
+                <div class="caroufredsel_wrapper">
+                    <ul class="folio-list clearfix">
+                        <li class="folio-thumb">    
+                            <div class="thumb">
+                                <div id = "slider">
+                                   <img src="images/app/ml_splash.png" alt="Splash Page">    
+                                    <img src="images/app/ml_lambs.png" alt="Prancing Merry Lambs">
+                                    <img src="images/app/ml_rain.png" alt="Colorful Rain">
+                                    <img src="images/app/ml_info.png" alt="About Merry Lambs">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </section>
             </center>
+
         </div>
 
         <aside>
