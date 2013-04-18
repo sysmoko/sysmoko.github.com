@@ -535,11 +535,13 @@ section#carousel ul.folio-list li {
     max-height: 379px;
 }
 section#carousel ul.folio-list li .thumb {
-    margin: 0 0 5px 0;
-    padding: 0;
-    background: url(../images/thumb-bg-large.png) no-repeat;
-    width: 539px;
-    height: 379px;
+    float: left;
+    padding: 10px 10px 25px 10px;
+    background: white;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    position: relative;
 }
 section#carousel ul.folio-list li .thumb img {
     margin-top: 27px;
