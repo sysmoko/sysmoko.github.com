@@ -14,6 +14,7 @@
     <title>Kids Karaoke :: Sysmoko</title>
 
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/nivo-slider.min.css">
     <style type="text/css">
     ul.music {
         list-style-image: url(images/bullet_music.png);
@@ -31,24 +32,17 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.1.0/jquery.carouFredSel.packed.js"></script>
-    
-        <script type="text/javascript">
-            $(document).ready(function() {
-            // Using custom configuration
-            $("#kk").carouFredSel({
-                direction           : "left",
-                scroll : {
-                    circular        : true,
-                    items           : 1,
-                    duration        : 500, 
-                    fx              : "crossfade",
-                    pauseOnHover    : true
-                }                  
-            });
+    <!--Carousel-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            directionNav: false,
+            controlNav: false
         });
-        </script>
+    });
+    </script>
 </head>
 
 <body>
@@ -90,25 +84,16 @@
             <li>Play your recorded voice to entertain the kids whilst you are away or busy!</li>
             <li>Learn new words and vocabulary by discovering different elements in each song!</li>
             </ul>
-            Surprise your kids with our shuffle feature, as they sing, dance, clap along with the rhythm!
-            <center>
-            <section id="carousel">    
-                <div class="caroufredsel_wrapper">
-                    <ul class="folio-list clearfix">
-                        <li class="folio-thumb">    
-                            <div class="thumb">
-                                <div id = "kk">
-                                    <img src="images/app/kk_splashscreen.jpg" alt="Kids Karaoke - Splash Screen">
-                                    <img src="images/app/kk_dashboard.jpg" alt="Kids Karaoke - Dashboard">
-                                    <img src="images/app/kk_santa.jpg" alt="Kids Karaoke - Santa Claus is Coming to Town">
-                                    <img src="images/app/kk_mary_lamb.jpg" alt="Kids Karaoke - Mary Had A Little Lamb">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <p>Surprise your kids with our shuffle feature, as they sing, dance, clap along with the rhythm!</p>
+
+            <div id="carousel" class="thumb">
+                <div id="slider" class="nivoSlider">
+                    <img src="images/app/kk_splashscreen.jpg" alt="Kids Karaoke - Splash Screen">
+                    <img src="images/app/kk_dashboard.jpg" alt="Kids Karaoke - Dashboard">
+                    <img src="images/app/kk_santa.jpg" alt="Kids Karaoke - Santa Claus is Coming to Town">
+                    <img src="images/app/kk_mary_lamb.jpg" alt="Kids Karaoke - Mary Had A Little Lamb">
                 </div>
-            </section>
-            </center>
+            </div>
         
             <h2>Learn to sing the following songs:</h2>
 

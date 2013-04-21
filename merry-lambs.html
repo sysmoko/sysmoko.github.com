@@ -13,7 +13,8 @@
 
     <title>Merry Lambs :: Sysmoko</title>
 
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/nivo-slider.min.css">
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-20484970-1']);
@@ -27,22 +28,14 @@
     </script>
     <!--Carousel-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.1.0/jquery.carouFredSel.packed.js"></script>
-    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            // Using custom configuration
-            $("#slider").carouFredSel({
-                direction           : "left",
-                scroll : {
-                    circular        : true,
-                    items           : 1,
-                    duration        : 500,   
-                    fx              : "crossfade",                     
-                    pauseOnHover    : true
-                }                  
-            });
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            directionNav: false,
+            controlNav: false
         });
+    });
     </script>
 </head>
 
@@ -78,25 +71,16 @@
                 <li>Learn different colors and how to spell them.</li>
                 <li>Learn different elements present in Merry Lambs.</li>
             </ul>
-            With interesting and colorful graphics, do not miss out the fun learning experience in Merry Lambs! Best for kids aged 2-4 years old. So download it for your toddler now!
-            <center>
-            <section id="carousel">    
-                <div class="caroufredsel_wrapper">
-                    <ul class="folio-list clearfix">
-                        <li class="folio-thumb">    
-                            <div class="thumb">
-                                <div id = "slider">
-                                    <img src="images/app/ml_splash.png" alt="Splash Page" class="img-polaroid">    
-                                    <img src="images/app/ml_lambs.png" alt="Prancing Merry Lambs">
-                                    <img src="images/app/ml_rain.png" alt="Colorful Rain">
-                                    <img src="images/app/ml_info.png" alt="About Merry Lambs">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <p>With interesting and colorful graphics, do not miss out the fun learning experience in Merry Lambs! Best for kids aged 2-4 years old. So download it for your toddler now!</p>
+            
+            <div id="carousel" class="thumb">
+                <div id="slider" class="nivoSlider">
+                    <img src="images/app/ml_splash.png" alt="Splash Page">    
+                    <img src="images/app/ml_lambs.png" alt="Prancing Merry Lambs">
+                    <img src="images/app/ml_rain.png" alt="Colorful Rain">
+                    <img src="images/app/ml_info.png" alt="About Merry Lambs">
                 </div>
-            </section>
-            </center>
+            </div>
         </div>
 
         <aside>
