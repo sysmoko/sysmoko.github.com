@@ -87,7 +87,7 @@ body {
     font-size: 16px;
     line-height: 25px;
     color: #3B3B3B;
-    background: /* url(../images/25-pixel-baseline.png) left top repeat, */ url(../images/bg.png) left top repeat ;
+    background: url(../images/bg.png) left top repeat ;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
 }
 
@@ -194,6 +194,7 @@ mark {
 --------------------------------------------------------- */
 #header-wrap {
     background: url(../images/header-bg.png);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 60px;
     z-index: 99999;
