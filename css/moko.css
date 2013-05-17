@@ -241,8 +241,13 @@ footer  ul.footer-menu li:first-child a {
   margin: 7px; 
 }
 
+.navbar-inner {
+    min-height: 48px;
+    padding-top: 8px;
+}
+
 .hero {
-  background: url(../images/b3.jpg) no-repeat center 40px fixed;
+  background: url(../images/b3.jpg) no-repeat center 56px fixed;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -255,7 +260,7 @@ footer  ul.footer-menu li:first-child a {
 }
 .hero-img {
   visibility: hidden;
-  margin-top: 40px;
+  margin-top: 56px;
   width: 100%;
   height: 100%;
 }
